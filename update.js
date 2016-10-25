@@ -257,7 +257,7 @@ function unzipArchive(what,where){
                     try{
                         entry.pipe(fs.createWriteStream(dest2));
                     }catch(e){
-                        consol.error('error extracting '+ fileName + ' to ' + dest2);
+                        console.error('error extracting '+ fileName + ' to ' + dest2);
                     }
                 }else{
                     entry.autodrain();
